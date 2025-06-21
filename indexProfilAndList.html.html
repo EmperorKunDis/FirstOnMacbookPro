@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil válečníka</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        
+        .fullscreen-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            transform: translate(14%, 6%);
+        }
+        
+        .glass-profile-left {
+            background: rgba(102, 35, 35, 0.4);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            border: 1px solid rgb(255, 254, 254);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            width: 410px;
+            height: 780px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .profile-top {
+            display: flex;
+            justify-content: space-between;
+            height: 20%;
+            margin-bottom: 15px;
+        }
+        
+        .profile-image-column {
+            width: 45%;
+        }
+        
+        .profile-info-column {
+            width: 45%;
+        }
+        
+        .profile-middle {
+            height: 60%;
+            width: 100%;
+            overflow-y: auto;
+        }
+        
+        .profile-bottom {
+            height: 5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        .admin-button {
+            background: rgba(60, 60, 60, 0.6);
+            color: white;
+            border: 1px solid rgba(200, 200, 200, 0.4);
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .admin-button:hover {
+            background: rgba(80, 80, 80, 0.8);
+        }
+        
+        .section {
+            margin-bottom: 5px;
+        }
+        
+        .glass-memberlist-right {
+            background: rgba(102, 35, 35, 0.4);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            border: 1px solid rgb(255, 254, 254);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            width: 440px;
+            height: 780px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .member-list-title {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 5px;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 0px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .rank-category {
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            text-align: center;
+            background: rgba(231, 76, 60, 0.2);
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .rank-title {
+            font-size: 15px;
+            color: #ffffff;
+            text-align: left;
+            margin: 5px 0 8px 0;
+            font-weight: bold;
+            border-left: 3px solid #ffffff;
+            padding-left: 5px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 5px 10px;
+            border-radius: 0 5px 5px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .member {
+            display: flex;
+            align-items: center;
+            margin: 8px 5px;
+            padding: 8px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 2px solid transparent;
+        }
+        
+        .member-avatar {
+            width: 30px;
+            height: 30px;
+            background-color: #555;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            margin-right: 2px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .member-avatar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+        }
+        
+        .member-name {
+            font-size: 16px;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .member:hover {
+            transform: translateX(5px);
+            background: rgba(231, 76, 60, 0.2);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+            border-left: 2px solid #ffffff;
+        }
+        
+        .member:hover .member-avatar {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        
+        .member:hover .member-name {
+            transform: translateX(3px);
+        }
+        
+        .profile-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .profile-popup {
+            background: rgba(128, 128, 128, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(200, 200, 200, 0.4);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            color: white;
+            position: relative;
+        }
+        
+        .close-profile {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #ffffff;
+        }
+        
+        .divider {
+            border-top: 1px dashed rgba(255, 255, 255, 0.3);
+            margin: 15px 0;
+        }
+        
+        .section-divider {
+            text-align: center;
+            margin: 20px 0;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section-divider::before,
+        .section-divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 35%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .section-divider::before {
+            left: 0;
+        }
+        
+        .section-divider::after {
+            right: 0;
+        }
+        
+        /* Scrollbar styling for the member list */
+        .glass-memberlist-right::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .glass-memberlist-right::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+        
+        .glass-memberlist-right::-webkit-scrollbar-thumb {
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+        
+        .glass-memberlist-right::-webkit-scrollbar-thumb:hover {
+            background: rgb(255, 255, 255);
+        }
+        
+        /* Add overflow property to make scrollbar work */
+        .glass-memberlist-right {
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.05);
+        }
+        
+        /* Activity Chart Styles */
+        .activity-chart-container {
+            color: white;
+            font-size: 14px;
+            margin-top: 5px;
+            padding: 0 10px;
+            height: 20%;
+        }
+        
+        .activity-chart {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 100px;
+            margin-top: 10px;
+            position: relative;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            margin-bottom: 15px;
+        }
+        
+        .month-column {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 16%;
+            height: 100%;
+        }
+        
+        .activity {
+            position: absolute;
+            bottom: 0;
+            width: 0px;
+            border-radius: 3px 3px 0 0;
+            border: 0px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            min-height: 10px;
+        }
+
+        .activity-bar {
+            position: absolute;
+            bottom: 0;
+            width: 20px;
+            background-color: #ff0000;
+            border-radius: 3px 3px 0 0;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            min-height: 10px;
+        }
+        
+        .month-label {
+            position: absolute;
+            bottom: -20px;
+            font-size: 12px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .activity-scale {
+            position: absolute;
+            left: -40px;
+            top: 0;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .scale-label {
+            height: 20px;
+            line-height: 20px;
+        }
+        
+        /* Popup Activity Chart Styles */
+        .popup-activity-chart {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 100px;
+            margin-top: 10px;
+            position: relative;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            margin-bottom: 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="backgroundKurvaBook.svg" alt="Fullscreen obrázek" class="fullscreen-img">
+    
+    <div class="container">
+        <div class="glass-profile-left">
+            <!-- Horní třetina - dva sloupce -->
+            <div class="profile-top">
+                <!-- Levý sloupec - obrázek -->
+                <div class="profile-image-column" style="color: white; font-size: 14px;">
+                    <div class="image-placeholder" style="width: 100%; height: 150px; border: 2px dashed white; display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+                        <span style="color: white;">{%IMAGE%}</span>
+                    </div>
+                </div>
+                
+                <!-- Pravý sloupec - osobní údaje -->
+                <div class="profile-info-column" style="color: white; font-size: 14px;">
+                    <h3 style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px;">Osobní údaje</h3>
+                    <p><strong>Jméno:</strong> {%USERNAME%}</p>
+                    <p><strong>Registrace:</strong> {%IMAGE%}</p>
+                    <p><strong>Hodnost:</strong> Kapitán</p>
+                    <p><strong>Původ:</strong> Cechy Morava Slezko Zapadni Madarsko zvane Slovensko</p>
+                </div>
+            </div>
+            
+            <!-- Prostřední část - jeden sloupec -->
+            <div class="profile-middle" style="color: white; font-size: 14px;">
+                <div class="section">
+                    <h3 style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px;">Specializace</h3>
+                    <ul style="list-style-type: none; padding-left: 5px; margin-top: 10px;">
+                        <li>- Velitel týmu</li>
+                        <li>- Stratég</li>
+                        <li>- Taktik</li>
+                        <li>- Průzkumník</li>
+                        <li>- Medik</li>
+                        <li>- Střelec</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h3 style="margin-top: 15px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px;">Členství</h3>
+                    <p><strong>Datum náboru:</strong> {%TEAMTEST%}</p>
+                    <p><strong>Poslední povinná akce:</strong> 15.03.2025</p>
+                    <p><strong>Poslední nepovinná akce:</strong> 24.12.2024</p>
+                </div>
+                
+               
+                
+                <div class="section">
+                    <h3 style="margin-top: 15px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px;">Ocenění</h3>
+                    <p><strong>Medaile a vyznamenání:</strong> Zlatý kříž, Stříbrná hvězda</p>
+                    <p><strong>Aktivita člena:</strong> 85%</p>
+                </div>
+                
+                
+            </div>
+            
+            <!-- Aktivita člena - graf posledních 6 měsíců -->
+            <div class="activity-chart-container">
+                <h3 style="margin-top: 5px; margin-bottom: 5px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px;">Aktivita za posledních 6 měsíců</h3>
+                <div class="activity-chart">
+                    <div class="month-column">
+                        <div class="activity" style="height: 100px;"><div class="activity-scale">
+                            <div class="scale-label">100%</div>
+                            <div class="scale-label">75%</div>
+                            <div class="scale-label">50%</div>
+                            <div class="scale-label">25%</div>
+                            <div class="scale-label">0%</div>
+                        </div></div>
+                        <div class="month-label">Říjen</div>
+                        <div class="activity-bar" style="height: 37px;"></div>
+                        <div class="month-label">Říjen</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 96px;"></div>
+                        <div class="month-label">Listopad</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 58px;"></div>
+                        <div class="month-label">Prosinec</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 12px;"></div>
+                        <div class="month-label">Leden</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 87px;"></div>
+                        <div class="month-label">Únor</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 62px;"></div>
+                        <div class="month-label">Březen</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Spodní část - admin tlačítka -->
+            <div class="profile-bottom">
+                <button class="admin-button">Steam ID</button>
+                <button class="admin-button">Rank</button>
+                <button class="admin-button">Seznam akcí</button>
+            </div>
+        </div>
+        <div class="glass-memberlist-right">
+            <div class="member-list-title">Seznam členů</div>
+            
+            <div class="rank-category">CO - Commisioned Officers</div>
+            
+            <div class="rank-title">Hauptman</div>
+            <div class="member" onclick="showProfile('Hauptman')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Mr.Faptiful</div>
+            </div>
+            
+            <div class="rank-title">Feldwebel</div>
+            <div class="member" onclick="showProfile('Feldwebel')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Vlk</div>
+            </div>
+            
+            <div class="rank-title">Wachtmeister</div>
+            <div class="member" onclick="showProfile('Wachtmeister')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Tlamoun</div>
+            </div>
+            
+            <div class="section-divider">-----------------------------------</div>
+            
+            <div class="rank-title">Rottmeister</div>
+            <div class="member" onclick="showProfile('Rottmeister')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Vejvar</div>
+            </div>
+            
+            <div class="rank-title">Fähnrich</div>
+            <div class="member" onclick="showProfile('Fähnrich')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Dark</div>
+            </div>
+            
+            <div class="section-divider">-----------------------------------</div>
+            
+            <div class="rank-category">NCO - Non-Commisioned Officers</div>
+            
+            <div class="rank-title">Trabant</div>
+            <div class="member" onclick="showProfile('Trabant')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Quartiermeister</div>
+            <div class="member" onclick="showProfile('Quartiermeister')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Reiter</div>
+            <div class="member" onclick="showProfile('Reiter')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Knappe</div>
+            <div class="member" onclick="showProfile('Knappe')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Doppelsöldner</div>
+            <div class="member" onclick="showProfile('Doppelsöldner')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Arzt</div>
+            <div class="member" onclick="showProfile('Arzt')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Beschossene Gefreiter</div>
+            <div class="member" onclick="showProfile('Beschossene Gefreiter')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Gefreiter</div>
+            <div class="member" onclick="showProfile('Gefreiter')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Haupt Schütze</div>
+            <div class="member" onclick="showProfile('Haupt Schütze')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Fußknecht</div>
+            <div class="member" onclick="showProfile('Fußknecht')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            <div class="member" onclick="showProfile('Fußknecht')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokserkyne</div>
+            </div>
+            <div class="member" onclick="showProfile('Fußknecht')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Joksercata</div>
+            </div>
+            <div class="member" onclick="showProfile('Fußknecht')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokseroid</div>
+            </div>
+
+
+            <div class="rank-title">Fußschütze</div>
+            <div class="member" onclick="showProfile('Fußschütze')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Beschossene Schütze</div>
+            <div class="member" onclick="showProfile('Beschossene Schütze')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Beschossene Knecht</div>
+            <div class="member" onclick="showProfile('Beschossene Knecht')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Schütze</div>
+            <div class="member" onclick="showProfile('Schütze')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Knecht</div>
+            <div class="member" onclick="showProfile('Knecht')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Kandidat</div>
+            <div class="member" onclick="showProfile('Kandidat')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Trossfrau</div>
+            <div class="member" onclick="showProfile('Trossfrau')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+            
+            <div class="rank-title">Reservist</div>
+            <div class="member" onclick="showProfile('Reservist')">
+                <div class="member-avatar"></div>
+                <div class="member-name">[SVCI] : Jokser</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Profile popup container -->
+    <div class="profile-container" id="profileContainer">
+        <div class="profile-popup">
+            <span class="close-profile" onclick="closeProfile()">&times;</span>
+            <h2 id="profileRank">Rank</h2>
+            <div id="profileContent">
+                <p><strong>Jméno:</strong> Jokser</p>
+                <p><strong>Hodnost:</strong> <span id="rankDisplay"></span></p>
+                <p><strong>Registrace:</strong> 16.08.2023</p>
+                <p><strong>Datum narození:</strong> 08.12.1993</p>
+                <p><strong>Datum náboru:</strong> 05.06.2022</p>
+                <p><strong>Původ:</strong> Praha, Česká republika</p>
+                <p><strong>Aktivita člena:</strong> 85%</p>
+                
+                <div class="divider"></div>
+                
+                <h3 style="margin-top: 15px; margin-bottom: 5px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px;">Aktivita za posledních 6 měsíců</h3>
+                <div class="popup-activity-chart">
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 37px;"></div>
+                        <div class="month-label">Říjen</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 96px;"></div>
+                        <div class="month-label">Listopad</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 58px;"></div>
+                        <div class="month-label">Prosinec</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 12px;"></div>
+                        <div class="month-label">Leden</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 87px;"></div>
+                        <div class="month-label">Únor</div>
+                    </div>
+                    <div class="month-column">
+                        <div class="activity-bar" style="height: 62px;"></div>
+                        <div class="month-label">Březen</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showProfile(rank) {
+            document.getElementById('profileRank').textContent = rank;
+            document.getElementById('rankDisplay').textContent = rank;
+            document.getElementById('profileContainer').style.display = 'flex';
+        }
+        
+        function closeProfile() {
+            document.getElementById('profileContainer').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

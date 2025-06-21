@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install:*)",
+      "Bash(brew install:*)",
+      "Bash(npx supabase:*)",
+      "Bash(sudo mv:*)",
+      "Bash(./supabase --version)",
+      "Bash(chmod:*)",
+      "Bash(docker:*)",
+      "Bash(../../supabase start)",
+      "Bash(/Users/martinsvanda/Code/SVCI/FirstOnMacbookPro/supabase start)",
+      "Bash(find:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run lint)",
+      "Bash(rm:*)",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  }
+}

@@ -1,0 +1,19 @@
+<div class="profile-popup">
+        <span class="close-profile" onclick="closeProfile()">&times;</span>
+        <h2 id="profileRank">Rank</h2>
+        <div id="profileContent">
+            <p><strong>Jméno:</strong>{%USERNAME%}</p>
+            <p><strong>Hodnost:</strong> <span id="rankDisplay"></span></p>
+            <p><strong>Registrace:</strong>{%USERREGISTRATION%}</p>
+            <p><strong>Datum narození:</strong>{%USERBORN%}</p>
+            <p><strong>Datum náboru:</strong>{%USERSTART%}</p>
+            <p><strong>Původ:</strong>{%USERFROM%}</p>
+            <p><strong>Aktivita člena:</strong>{%ACTUELMONTHAVERAGE%}</p>
+            
+            <div class="divider"></div>
+            
+            <a class="profile_link" href="{%USERLINK%}">
+                <img src="{%USERAVATAR%}" alt="Avatar" class="profile-avatar">
+            </a>
+        </div>
+    </div>

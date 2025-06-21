@@ -1,0 +1,1304 @@
+[
+    {
+        "id": 1,
+        "profileImage": "profile_1.jpg",
+        "personalInfo": {
+            "name": "KunDis_ZmrdoBijec",
+            "registration": "1.4.2025",
+            "rank": "Beschoessene Knecht",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "02.06.1991",
+            "lastRequiredAction": "01.04.2025",
+            "lastOptionalAction": "30.03.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Clan veteran 2022"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "martin.k.svanda@gmail.com"
+    },
+    {
+        "id": 2,
+        "profileImage": "profile_2.jpg",
+        "personalInfo": {
+            "name": "Hownie :3",
+            "registration": "1.4.2025",
+            "rank": "Beschossene Knecht",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "10.12.2023",
+            "lastRequiredAction": "16.3.2025",
+            "lastOptionalAction": "---------"
+        },
+        "awards": {
+            "medalsDecorations": ["Nic :c"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "tuntunqwp@gmail.com"
+    },
+    {
+        "id": 3,
+        "profileImage": "profile_3.jpg",
+        "personalInfo": {
+            "name": "Danny",
+            "registration": "1. 4. 2025",
+            "rank": "Beschossene Knecht",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "30. 3. 2022",
+            "lastRequiredAction": "30. 3. 2025",
+            "lastOptionalAction": "25. 3. 2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Lila Streife"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "dannyy15987@gmail.com"
+    },
+    {
+        "id": 4,
+        "profileImage": "profile_4.jpg",
+        "personalInfo": {
+            "name": "Tlamoun",
+            "registration": "1.4.2025",
+            "rank": "Fußknecht",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Kavalerie"
+        ],
+        "membership": {
+            "recruitmentDate": "19.1.2025",
+            "lastRequiredAction": "23.3.2025",
+            "lastOptionalAction": "31.3.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "tlamoun959@seznam.cz"
+    },
+    {
+        "id": 5,
+        "profileImage": "profile_5.jpg",
+        "personalInfo": {
+            "name": "Zuzujj",
+            "registration": "1.4.2025",
+            "rank": "Gefreiter",
+            "origin": "Silesia"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "19.01.2024",
+            "lastRequiredAction": "30.03.2025",
+            "lastOptionalAction": "01.04.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Clan veterena 2023"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "renasuz@seznam.cz"
+    },
+    {
+        "id": 6,
+        "profileImage": "profile_6.jpg",
+        "personalInfo": {
+            "name": "Jobo",
+            "registration": "01.04.2025",
+            "rank": "kandidát",
+            "origin": "Silesia"
+        },
+        "specializations": [
+            "pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "17.02.2025",
+            "lastRequiredAction": "20.03.2025",
+            "lastOptionalAction": "26.03.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "hashgroundbeef@gmail.com"
+    },
+    {
+        "id": 7,
+        "profileImage": "profile_7.jpg",
+        "personalInfo": {
+            "name": "killerBrichy",
+            "registration": "1.4.2025",
+            "rank": "Kandidat",
+            "origin": "Čechy"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "23.3.2025",
+            "lastRequiredAction": "30.3.2025",
+            "lastOptionalAction": "1.4.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "pavelbrichacek470@gmail.com"
+    },
+    {
+        "id": 8,
+        "profileImage": "profile_8.jpg",
+        "personalInfo": {
+            "name": "Kill",
+            "registration": "1.4.2025",
+            "rank": "Knecht",
+            "origin": "Slezsko"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "28.4.2024",
+            "lastRequiredAction": "",
+            "lastOptionalAction": ""
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "ondra.vicha@post.cz"
+    },
+    {
+        "id": 9,
+        "profileImage": "profile_9.jpg",
+        "personalInfo": {
+            "name": "CapitaneoPeareoa",
+            "registration": "2.4.2025",
+            "rank": "rekruit",
+            "origin": "slovakia"
+        },
+        "specializations": [
+            "pechota (to mi dá velenie)"
+        ],
+        "membership": {
+            "recruitmentDate": "20.12.2024",
+            "lastRequiredAction": "26.3.2025",
+            "lastOptionalAction": "non (nebol čas xD)"
+        },
+        "awards": {
+            "medalsDecorations": ["-"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "69bigdaddyskstudiosk96@gmail.com"
+    },
+    {
+        "id": 10,
+        "profileImage": "profile_10.jpg",
+        "personalInfo": {
+            "name": "Gibli",
+            "registration": "02.04.2025",
+            "rank": "Kandidát",
+            "origin": "Bohemia"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "21.03.2025",
+            "lastRequiredAction": "30.03.2025",
+            "lastOptionalAction": "01.04.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "cute.panda.is.best@gmail.com"
+    },
+    {
+        "id": 11,
+        "profileImage": "profile_11.jpg",
+        "personalInfo": {
+            "name": "stanislav",
+            "registration": "25.1.2025",
+            "rank": "Kandidát",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "25.1.2025",
+            "lastRequiredAction": "31.4.2025",
+            "lastOptionalAction": "___________"
+        },
+        "awards": {
+            "medalsDecorations": ["___________"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "vojtech.vesely.01@gmail.com"
+    },
+    {
+        "id": 12,
+        "profileImage": "profile_12.jpg",
+        "personalInfo": {
+            "name": "Nex0TV",
+            "registration": "02.04.2025",
+            "rank": "Knecht",
+            "origin": "Bohemia"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "27.02.2024",
+            "lastRequiredAction": "30.03.2025",
+            "lastOptionalAction": "Nehrál"
+        },
+        "awards": {
+            "medalsDecorations": ["Žádná"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "Nex0TV@seznam.cz"
+    },
+    {
+        "id": 13,
+        "profileImage": "profile_13.jpg",
+        "personalInfo": {
+            "name": "Bloodywolf",
+            "registration": "2.4.2025",
+            "rank": "Reservist",
+            "origin": "Škarpa 34, kilometr Znojmo na Brno"
+        },
+        "specializations": [
+            "Pěchota/Dvorní Ochutnavač Piva"
+        ],
+        "membership": {
+            "recruitmentDate": "Někdy minulé desetiletí",
+            "lastRequiredAction": "22.12.2024",
+            "lastOptionalAction": "Pičo kdo to má hledat???"
+        },
+        "awards": {
+            "medalsDecorations": ["Vlkův důvod na antidepresiva číslo 1"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "dominik.vasicek@email.cz"
+    },
+    {
+        "id": 14,
+        "profileImage": "profile_14.jpg",
+        "personalInfo": {
+            "name": "SKILLERCZ",
+            "registration": "2.4.2025",
+            "rank": "Kandidát",
+            "origin": "Čechy"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "13.3.2025",
+            "lastRequiredAction": "30.3.2025",
+            "lastOptionalAction": "26.3.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "skillercz8576@gmail.com"
+    },
+    {
+        "id": 15,
+        "profileImage": "profile_15.jpg",
+        "personalInfo": {
+            "name": "Namelol",
+            "registration": "02.04.2025",
+            "rank": "Kandidát",
+            "origin": "Bohemia"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "31.10.2022",
+            "lastRequiredAction": "30.03.2025",
+            "lastOptionalAction": "01.02.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "kelrots@gmail.com"
+    },
+    {
+        "id": 16,
+        "profileImage": "profile_16.jpg",
+        "personalInfo": {
+            "name": "StrikerPredator",
+            "registration": "2.4.2025",
+            "rank": "Kandidat",
+            "origin": "Slezko"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "20.3.2025",
+            "lastRequiredAction": "",
+            "lastOptionalAction": ""
+        },
+        "awards": {
+            "medalsDecorations": ["SVCI"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "kopytok@seznam.cz"
+    },
+    {
+        "id": 17,
+        "profileImage": "profile_17.jpg",
+        "personalInfo": {
+            "name": "StrikerPredator",
+            "registration": "2.4.2025",
+            "rank": "Kandidat",
+            "origin": "Slezko"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "20.3.2025",
+            "lastRequiredAction": "",
+            "lastOptionalAction": ""
+        },
+        "awards": {
+            "medalsDecorations": ["SVCI"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "kopytok@seznam.cz"
+    },
+    {
+        "id": 18,
+        "profileImage": "profile_18.jpg",
+        "personalInfo": {
+            "name": "alloball",
+            "registration": "2.4.2025",
+            "rank": "kandidát",
+            "origin": "SK"
+        },
+        "specializations": [
+            "Pechota"
+        ],
+        "membership": {
+            "recruitmentDate": "7.12.2024",
+            "lastRequiredAction": "30.3.2025",
+            "lastOptionalAction": "25.3.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "alloball68@gmail.com"
+    },
+    {
+        "id": 19,
+        "profileImage": "profile_19.jpg",
+        "personalInfo": {
+            "name": "Roms1235",
+            "registration": "02.04.2025",
+            "rank": "Beschoessene Knecht",
+            "origin": "Slovakia"
+        },
+        "specializations": [
+            "Pechota"
+        ],
+        "membership": {
+            "recruitmentDate": "1.6.2023",
+            "lastRequiredAction": "30.3.2025",
+            "lastOptionalAction": ""
+        },
+        "awards": {
+            "medalsDecorations": ["Clan Veteran 2023"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "romandocekal3@gmail.com"
+    },
+    {
+        "id": 20,
+        "profileImage": "profile_20.jpg",
+        "personalInfo": {
+            "name": "David_Czek",
+            "registration": "2.4.2025",
+            "rank": "Knecht",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "17.04.2024",
+            "lastRequiredAction": "2.4.2025",
+            "lastOptionalAction": "Never"
+        },
+        "awards": {
+            "medalsDecorations": ["Veteran of LBO"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "cernotik1@seznam.cz"
+    },
+    {
+        "id": 21,
+        "profileImage": "profile_21.jpg",
+        "personalInfo": {
+            "name": "Raindropz",
+            "registration": "1. 4. 2025",
+            "rank": "Beschossene Schütze",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Archer"
+        ],
+        "membership": {
+            "recruitmentDate": "24. 12. 2023",
+            "lastRequiredAction": "30. 3. 2025",
+            "lastOptionalAction": "1. 4. 2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Clan veteran 2024"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "raindropz@seznam.cz"
+    },
+    {
+        "id": 22,
+        "profileImage": "profile_22.jpg",
+        "personalInfo": {
+            "name": "Zander O'conner",
+            "registration": "1.4.2025",
+            "rank": "Knecht",
+            "origin": "Čechy"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "24.11.2024",
+            "lastRequiredAction": "30.3.2025",
+            "lastOptionalAction": "1.4.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Nemám žádnou"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "peterjaksik@seznam.cz"
+    },
+    {
+        "id": 23,
+        "profileImage": "profile_23.jpg",
+        "personalInfo": {
+            "name": "Ddoktorkog",
+            "registration": "02.04.2025",
+            "rank": "Knecht",
+            "origin": "Slowakishe Republik"
+        },
+        "specializations": [
+            "Infanterie (Bogenschütze)"
+        ],
+        "membership": {
+            "recruitmentDate": "21.01.2024",
+            "lastRequiredAction": "30.03.2025",
+            "lastOptionalAction": "25.03.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Veteran of LBO"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "91anarchy91@gmail.com"
+    },
+    {
+        "id": 24,
+        "profileImage": "profile_24.jpg",
+        "personalInfo": {
+            "name": "Jfafekcz",
+            "registration": "2.4.2025",
+            "rank": "Kandidat",
+            "origin": "Bohemia"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "24.3.2025",
+            "lastRequiredAction": "2.4.2025",
+            "lastOptionalAction": "1.4.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "Jfafek@gmail.com"
+    },
+    {
+        "id": 25,
+        "profileImage": "profile_25.jpg",
+        "personalInfo": {
+            "name": "Qwajak :D",
+            "registration": "02.04.2025",
+            "rank": "Beschossene Knecht",
+            "origin": "Mähren"
+        },
+        "specializations": [
+            "Infanterie"
+        ],
+        "membership": {
+            "recruitmentDate": "11.11.24",
+            "lastRequiredAction": "02.04.25",
+            "lastOptionalAction": "30.03.25"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "halouzkaj@gmail.com"
+    },
+    {
+        "id": 26,
+        "profileImage": "profile_26.jpg",
+        "personalInfo": {
+            "name": "W.Folk",
+            "registration": "3.4.2025",
+            "rank": "Beschoessene Knecht",
+            "origin": "Slovensko"
+        },
+        "specializations": [
+            "Pechota"
+        ],
+        "membership": {
+            "recruitmentDate": "5.10.2022",
+            "lastRequiredAction": "2.4.2025",
+            "lastOptionalAction": ""
+        },
+        "awards": {
+            "medalsDecorations": ["Clan Veteran 2022", "Austerlitz 2023", "Austerlitz 2024"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "tomasurban243@gmail.com"
+    },
+    {
+        "id": 27,
+        "profileImage": "profile_27.jpg",
+        "personalInfo": {
+            "name": "W.Folk",
+            "registration": "3.4.2025",
+            "rank": "Beschoessene Knecht",
+            "origin": "Slovensko"
+        },
+        "specializations": [
+            "Pechota"
+        ],
+        "membership": {
+            "recruitmentDate": "5.10.2022",
+            "lastRequiredAction": "2.4.2025",
+            "lastOptionalAction": ""
+        },
+        "awards": {
+            "medalsDecorations": ["Clan Veteran 2022", "Austerlitz 2023", "Austerlitz 2024"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "tomasurban243@gmail.com"
+    },
+    {
+        "id": 28,
+        "profileImage": "profile_28.jpg",
+        "personalInfo": {
+            "name": "Ari",
+            "registration": "4.4.2025",
+            "rank": "Knecht",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "28.04.2025",
+            "lastRequiredAction": "05.03.2025",
+            "lastOptionalAction": "-"
+        },
+        "awards": {
+            "medalsDecorations": ["-"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "ondkunc@gmail.com"
+    },
+    {
+        "id": 29,
+        "profileImage": "profile_29.jpg",
+        "personalInfo": {
+            "name": "nazdarekparek",
+            "registration": "4.4.2025",
+            "rank": "Knecht",
+            "origin": "Čechy"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "20.10.2024",
+            "lastRequiredAction": "23.3.2025",
+            "lastOptionalAction": "26.2.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["none"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "vasekivanco@seznam.cz"
+    },
+    {
+        "id": 30,
+        "profileImage": "profile_30.jpg",
+        "personalInfo": {
+            "name": "Atoman",
+            "registration": "4.4.2025",
+            "rank": "Fußknecht",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "13.5.2024",
+            "lastRequiredAction": "2.4.2025",
+            "lastOptionalAction": "1.4.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Veteran of LBO"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "jiri.lipo@seznam.cz"
+    },
+    {
+        "id": 31,
+        "profileImage": "profile_31.jpg",
+        "personalInfo": {
+            "name": "myroware",
+            "registration": "17.1.2025",
+            "rank": "Kandidat",
+            "origin": "Czech Republic, Bohemia"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "19.1.2025",
+            "lastRequiredAction": "16.3.2025",
+            "lastOptionalAction": "N/A"
+        },
+        "awards": {
+            "medalsDecorations": ["N/A"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "sarka@boobs.institute"
+    },
+    {
+        "id": 32,
+        "profileImage": "profile_32.jpg",
+        "personalInfo": {
+            "name": "Gatermo",
+            "registration": "4.4.2025",
+            "rank": "Kandidat",
+            "origin": "Čechy"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "-",
+            "lastRequiredAction": "09.03.2025",
+            "lastOptionalAction": "01.04.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["-"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "jirka.cernyy@seznam.cz"
+    },
+    {
+        "id": 33,
+        "profileImage": "profile_33.jpg",
+        "personalInfo": {
+            "name": "Vexth",
+            "registration": "4.4.2025",
+            "rank": "Kandidat",
+            "origin": "Slezsko"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "4.3.2025",
+            "lastRequiredAction": "30.3.2025",
+            "lastOptionalAction": "1.4.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "michal.pentak@seznam.cz"
+    },
+    {
+        "id": 34,
+        "profileImage": "profile_34.jpg",
+        "personalInfo": {
+            "name": "Emperor_Constantin",
+            "registration": "4.4.2025",
+            "rank": "Kandidat",
+            "origin": "Čechy"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "21.11.2024",
+            "lastRequiredAction": "",
+            "lastOptionalAction": ""
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "ondrej.carda@post.cz"
+    },
+    {
+        "id": 35,
+        "profileImage": "profile_35.jpg",
+        "personalInfo": {
+            "name": "RAPTOR",
+            "registration": "4.4.2025",
+            "rank": "Haupt Schütze",
+            "origin": "SLOVAKIA"
+        },
+        "specializations": [
+            "STRELEC"
+        ],
+        "membership": {
+            "recruitmentDate": "11.5.2023",
+            "lastRequiredAction": "2.3.2025",
+            "lastOptionalAction": "1.4.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Clan Veteran 2023"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "igorsoltys8@gmail.com"
+    },
+    {
+        "id": 36,
+        "profileImage": "profile_36.jpg",
+        "personalInfo": {
+            "name": "Alfroy",
+            "registration": "4.4.2025",
+            "rank": "Kandidat",
+            "origin": "Čechy"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "2.3.2025",
+            "lastRequiredAction": "2.4.2025",
+            "lastOptionalAction": "None"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "mbrecka@seznam.cz"
+    },
+    {
+        "id": 37,
+        "profileImage": "profile_37.jpg",
+        "personalInfo": {
+            "name": "laseiUrufu",
+            "registration": "2.4.2025",
+            "rank": "Beschoessene Knecht",
+            "origin": "Slovensko"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "7. 3. 2024",
+            "lastRequiredAction": "02.04.2025",
+            "lastOptionalAction": "16.03.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Veteran of LBO"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "wildwolfsk @gmail.com"
+    },
+    {
+        "id": 38,
+        "profileImage": "profile_38.jpg",
+        "personalInfo": {
+            "name": "ChoseArmando",
+            "registration": "5.4.2025",
+            "rank": "Beschossene Knecht",
+            "origin": "Čechy"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "16.10.2023",
+            "lastRequiredAction": "2.4.2025",
+            "lastOptionalAction": "1.4.2025"
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "pepas19CZ@seznam.cz"
+    },
+    {
+        "id": 39,
+        "profileImage": "profile_39.jpg",
+        "personalInfo": {
+            "name": "Davidus95",
+            "registration": "4.4.2025",
+            "rank": "Nahatá žena ze Sturgia Beschossene Knecht",
+            "origin": "Čechy"
+        },
+        "specializations": [
+            "Pěchota, doctor"
+        ],
+        "membership": {
+            "recruitmentDate": "15.12.2023",
+            "lastRequiredAction": "22.3.2025",
+            "lastOptionalAction": ""
+        },
+        "awards": {
+            "medalsDecorations": [],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "davidus95@seznam.cz"
+    },
+    {
+        "id": 40,
+        "profileImage": "profile_40.jpg",
+        "personalInfo": {
+            "name": "Pantrubka",
+            "registration": "6.4.2025",
+            "rank": "Fusknecht",
+            "origin": "Morava"
+        },
+        "specializations": [
+            "Pěchota/Strelec"
+        ],
+        "membership": {
+            "recruitmentDate": "26.4.2024",
+            "lastRequiredAction": "2.4.2025",
+            "lastOptionalAction": "5.4.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Veteran of LBO"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "matessvoj@gmail.com"
+    },
+    {
+        "id": 41,
+        "profileImage": "profile_41.jpg",
+        "personalInfo": {
+            "name": "KoreanPizzaBoy",
+            "registration": "6.4.2025",
+            "rank": "Knecht",
+            "origin": "Bohemia"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "07.12.2024",
+            "lastRequiredAction": "06.04.2025",
+            "lastOptionalAction": "00.00.0000"
+        },
+        "awards": {
+            "medalsDecorations": ["Veteran of LBO"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "koreanpizzaboy@gmail.com"
+    },
+    {
+        "id": 42,
+        "profileImage": "profile_42.jpg",
+        "personalInfo": {
+            "name": "Nagato",
+            "registration": "09.04.2025",
+            "rank": "Beschossene Knecht",
+            "origin": "Bohemia"
+        },
+        "specializations": [
+            "Pěchota"
+        ],
+        "membership": {
+            "recruitmentDate": "25.11.2024",
+            "lastRequiredAction": "30.03.2025",
+            "lastOptionalAction": "05.04.2025"
+        },
+        "awards": {
+            "medalsDecorations": ["Veteran of LBO"],
+            "activityPercentage": 0
+        },
+        "activityLastSixMonths": {
+            "October": 0,
+            "November": 0,
+            "December": 0,
+            "January": 0,
+            "February": 0,
+            "March": 0
+        },
+        "userEmail": "fanny7@email.cz"
+    }
+]
