@@ -13,8 +13,14 @@ export const AuthProvider = ({ children }) => {
         const { data: { session } } = await supabase.auth.getSession();
         setUser(session?.user ?? null);
       } catch (error) {
-        console.log('Auth service not available, running in demo mode');
-        setUser(null);
+        console.log('Auth service not available, checking for demo user');
+        // Zkontrolovat demo uživatele v localStorage
+        const demoUser = localStorage.getItem('demo_user');
+        if (demoUser) {
+          setUser(JSON.parse(demoUser));
+        } else {
+          setUser(null);
+        }
       }
       setLoading(false);
     };
@@ -47,14 +53,21 @@ export const AuthProvider = ({ children }) => {
       return data;
     } catch (error) {
       // Demo login for when Supabase is not available
-      console.log('Using demo login');
-      const demoUser = {
-        id: 'demo-user-123',
-        email: credentials.email,
-        user_metadata: { name: 'Demo User' }
-      };
-      setUser(demoUser);
-      return { user: demoUser };
+      console.log('Supabase not available, using demo login:', error.message);
+      
+      // Simulace přihlášení
+      if (credentials.email && credentials.password) {
+        const demoUser = {
+          id: 'demo-user-123',
+          email: credentials.email,
+          user_metadata: { name: 'Demo User' }
+        };
+        setUser(demoUser);
+        localStorage.setItem('demo_user', JSON.stringify(demoUser));
+        return { user: demoUser };
+      } else {
+        throw new Error('Email a heslo jsou povinné');
+      }
     }
   };
 
@@ -69,14 +82,20 @@ export const AuthProvider = ({ children }) => {
       return data;
     } catch (error) {
       // Demo registration
-      console.log('Using demo registration');
-      const demoUser = {
-        id: 'demo-user-' + Date.now(),
-        email: userData.email,
-        user_metadata: { name: 'Demo User' }
-      };
-      setUser(demoUser);
-      return { user: demoUser };
+      console.log('Supabase not available, using demo registration:', error.message);
+      
+      if (userData.email && userData.password) {
+        const demoUser = {
+          id: 'demo-user-' + Date.now(),
+          email: userData.email,
+          user_metadata: { name: 'Demo User' }
+        };
+        setUser(demoUser);
+        localStorage.setItem('demo_user', JSON.stringify(demoUser));
+        return { user: demoUser };
+      } else {
+        throw new Error('Email a heslo jsou povinné');
+      }
     }
   };
 
@@ -87,6 +106,8 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       console.log('Demo logout');
     }
+    // Vymazat demo uživatele z localStorage
+    localStorage.removeItem('demo_user');
     setUser(null);
   };
 

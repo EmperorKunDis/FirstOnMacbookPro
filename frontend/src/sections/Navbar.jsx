@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { navLinks } from '../constants/index.js';
+import { useAuth } from '../context/AuthContext.jsx';
 
 // eslint-disable-next-line react/prop-types
 const NavItems = ({ onClick = () => {} }) => (
@@ -25,6 +26,7 @@ const NavItems = ({ onClick = () => {} }) => (
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ onNavigate }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const { user, logout } = useAuth();
 
     const toggleMenu = () => setIsOpen(!isOpen);
     
@@ -53,7 +55,20 @@ const Navbar = ({ onNavigate }) => {
                         </a>
                     </div>
 
-                    <div className="flex justify-end items-center">
+                    <div className="flex justify-end items-center gap-4">
+                        {user && (
+                            <div className="hidden sm:flex items-center gap-4">
+                                <span className="text-white text-sm">
+                                    Přihlášen: {user.email}
+                                </span>
+                                <button
+                                    onClick={logout}
+                                    className="text-red-400 hover:text-red-300 text-sm"
+                                >
+                                    Odhlásit
+                                </button>
+                            </div>
+                        )}
                         <nav className="sm:flex hidden">
                             <NavItems onClick={handleNavClick} />
                         </nav>
