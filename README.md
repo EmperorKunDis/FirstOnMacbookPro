@@ -1,6 +1,6 @@
-# SVCI - Student Vice Council Initiative
+# SVCI - Czechoslovak Corps
 
-Full-stack webová aplikace pro SVCI (Student Vice Council Initiative) se 3D grafikou, autentifikací a guild member ranking systémem.
+Full-stack webová aplikace pro SVCI Czechoslovak Corps se 3D grafikou, autentifikací a guild member ranking systémem.
 
 ## 🏗️ Architektura
 
