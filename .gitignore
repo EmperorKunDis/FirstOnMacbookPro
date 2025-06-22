@@ -1,77 +1,63 @@
-# Dependencies
-node_modules/
-frontend/node_modules/
-backend/supabase/node_modules/
+# MacOS a systémové soubory
+.DS_Store
 
-# Production builds
-frontend/dist/
-frontend/build/
-.next/
-.turbo/
+# Node.js závislosti
+**/node_modules/
+**/frontend/profiles
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Build output
+**/dist/
+**/build/
+**/.next/
+**/.turbo/
 
-# Logs
+# Env soubory a konfigurace
+**/.env
+**/.env.*
+!.env.example  # výjimka pro ukázkový .env
+
+# Logy a dočasné soubory
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Runtime data
-pids/
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
-coverage/
-.nyc_output/
-
-# Cache
-.cache/
-.parcel-cache/
-
-# Editor directories and files
+# Editor metadata
 .vscode/
 .idea/
 *.swp
-*.swo
-*~
 
-# OS Files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Git ignore files uvnitř vnořených projektů
+**/.gitignore
 
-# Backend specific (only the full supabase repo, keep our config)
-backend/supabase/apps/
-backend/supabase/examples/
-backend/supabase/packages/
-backend/supabase/tests/
-backend/supabase/.github/
-backend/supabase/docker/
+# Lint, prettier a jiná IDE nastavení
+**/.eslintcache
+**/.prettierignore
+**/.prettierrc
+**/.vale.ini
+**/.nvmrc
+**/.npmrc
+**/.dockerignore
+**/.misspell-fixer.ignore
 
-# Keep only our essential supabase config
-!backend/supabase/supabase/
-!backend/supabase/.env
+# Výstupy testů a cache
+coverage/
+.nyc_output/
+.cache/
+**/.turbo/
+**/.jest/
+**/.test/
 
-# Temporary files
-*.tmp
-*.temp
-toDelete.txt
+# Supabase generované a výstupy
+**/supabase/.temp/
+**/supabase/.output/
 
-# Docker
-docker-compose.yml
+# 🔒 Zakázat vše, co obsahuje „ai“ (v názvu, case-insensitive)
+**/*[aA][iI]*
 
-# Claude settings
-.claude/
+# Případné složky obsahující "ai"
+**/[aA][iI]*/
+
+# Git submodule ignorace
+**/.git
