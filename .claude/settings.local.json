@@ -23,7 +23,9 @@
       "Bash(pkill:*)",
       "Bash(git checkout:*)",
       "Bash(touch:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }
